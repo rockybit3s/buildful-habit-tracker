@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1>Habit Tracker</h1>
+        <p class="subtitle">Build good habits, one day at a time.</p>
+      </header>
+
+      <form id="add-habit-form" class="add-form" aria-label="Add a new habit">
+        <input
+          id="habit-name"
+          name="habit-name"
+          type="text"
+          placeholder="New habit, e.g. Read 20 minutes"
+          autocomplete="off"
+          maxlength="80"
+          required
+        />
+        <button type="submit" class="btn btn-primary">Add habit</button>
+      </form>
+
+      <p id="form-status" class="form-status" role="status" aria-live="polite" hidden></p>
+
+      <p id="progress" class="progress" role="status" aria-live="polite"></p>
+
+      <section id="habit-list" class="habit-list" aria-label="Your habits"></section>
+
+      <div id="empty-state" class="empty-state" hidden>
+        <div class="empty-emoji" aria-hidden="true">🌱</div>
+        <h2>No habits yet</h2>
+        <p>Add your first habit above to start tracking.</p>
+      </div>
+    </main>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

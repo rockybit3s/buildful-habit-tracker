@@ -1,0 +1,11 @@
+{
+  "name": "buildful-habit-tracker",
+  "version": "1.0.0",
+  "description": "A simple, mobile-friendly habit tracker.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "node --test",
+    "start": "node server.js"
+  }
+}
